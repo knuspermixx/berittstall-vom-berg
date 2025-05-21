@@ -1,1 +1,44 @@
 @import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=AR+One+Sans:wght@400;500;700&display=swap");
+
+@theme {
+  --color-linen-light: #fcf8f5;
+  --color-linen: #fcf5f2;
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --font-heading: "Julius Sans One", system-ui, sans-serif;
+  --font-body: "AR One Sans", system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: var(--font-body);
+    color: var(--color-black);
+    background-color: var(--color-white);
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    color: var(--color-black);
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--color-black);
+  }
+}

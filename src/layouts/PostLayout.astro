@@ -4,10 +4,9 @@ import Contact from "../components/contact.astro";
 import Footer from "../components/footer.astro";
 import Navbar from "../components/navbar.astro";
 
-type Props = CollectionEntry<"news">["data"];
+type Props = CollectionEntry<"posts">["data"];
 
 const { title, heroImage } = Astro.props;
-import "../styles/global.css";
 ---
 
 <html lang="en">
